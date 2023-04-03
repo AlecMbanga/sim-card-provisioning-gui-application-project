@@ -1,0 +1,36 @@
+.text-field.error {
+    -fx-text-box-border: red ;
+    -fx-focus-color: red ;
+}
+
+.tooltip-error {
+    -fx-background-color: white ;
+    -fx-text-fill: red; 
+    -fx-font-size: 14px;
+}
+
+.tooltip-hint {
+    -fx-background-color: white ;
+    -fx-text-fill:  #1c364a; 
+    -fx-font-size: 14px;
+}
+
+.combo-box.error {
+    
+    -fx-border-color : red ;
+
+}
+
+button1 {
+    -fx-background-color: white;
+}
+
+.fineTuneOn {
+    -fx-fill: lightgreen;
+}
+
+.chkBox {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    
+}

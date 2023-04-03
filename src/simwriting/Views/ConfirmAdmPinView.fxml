@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="156.0" prefWidth="465.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simwriting.Controllers.ConfirmAdmPinController">
+    <stylesheets>
+        <URL value="@/simwriting/Styles/Application.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutY="7.0" prefHeight="29.0" prefWidth="553.0" style="-fx-background-color: linear-gradient(black, #1c364a, black);" text="Confirm" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="FreeMono" size="27.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="7.0" layoutY="22.0" prefHeight="115.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="433.0">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icon14.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="confirmLabel" text="Are you sure the ADM PIN is correct? Card will be blocked after 3 incorrect attempts" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="46.0" prefWidth="446.0" spacing="15.0">
+               <children>
+                  <Button fx:id="confirmBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="89.0" style="-fx-background-radius: 15;" text="Confirm" />
+                  <Button fx:id="cancelBtn" layoutX="344.0" layoutY="24.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="89.0" style="-fx-background-radius: 15;" text="Cancel" />
+               </children>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
